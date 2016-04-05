@@ -78,7 +78,7 @@ static NSString * const WDWeatherPresenterBackgroundImageNameUnknown = @"backgro
 }
 
 - (RACSignal *)weatherForCurrentLocation {
-    return [[[[WDServiceProvider locationService] getCurrentLocalization] flattenMap:^RACStream *(CLLocation *location) {
+    return [[[[WDServiceProvider locationService] getCurrentLocation] flattenMap:^RACStream *(CLLocation *location) {
         return [[[WDServiceProvider weatherService] getWeatherForLocation:location] catch:^RACSignal *(NSError *error) {
             return [RACSignal return:nil];
         }];

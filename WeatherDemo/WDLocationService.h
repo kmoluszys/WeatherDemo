@@ -10,6 +10,6 @@
 
 @interface WDLocationService : SNService
 
-- (RACSignal *)getCurrentLocalization;
+- (RACSignal *)getCurrentLocation;
 
 @end

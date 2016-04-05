@@ -30,7 +30,7 @@
 # pragma mark - Signals -
 // ----------------------------------------------------------------------------------------------------------------
 
-- (RACSignal *)getCurrentLocalization {
+- (RACSignal *)getCurrentLocation {
     return [[[self.localizationHotSignal.signal ignore:nil] distinctUntilChanged] throttle:0.3f];
 }
 
