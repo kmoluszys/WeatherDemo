@@ -1,0 +1,116 @@
+{
+  "people": [
+    {
+      "id": 1,
+      "login": "test1",
+      "password": "test1"
+    },
+    {
+      "id": 2,
+      "login": "test2",
+      "password": "test2"
+    }
+  ],
+  "details": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "name": "Karol",
+      "surname": "Moluszys",
+      "hobby": "stuff"
+    },
+    {
+      "id": 1,
+      "user_id": 2,
+      "name": "Grzegorz",
+      "surname": "Sagadyn",
+      "hobby": "other stuff"
+    }
+  ],
+  "weather": [
+    {
+      "id": 1,
+      "lat": 51.50998,
+      "lon": -0.1337,
+      "type": 1,
+      "temp": 39
+    },
+    {
+      "id": 2,
+      "lat": -26.2041028,
+      "lon": 28.0473051,
+      "type": 2,
+      "temp": 19
+    },
+    {
+      "id": 3,
+      "lat": 40.759211,
+      "lon": -73.984638,
+      "type": 3,
+      "temp": 9
+    },
+    {
+      "id": 4,
+      "lat": 55.755786,
+      "lon": 37.617633,
+      "type": 2,
+      "temp": -1
+    },
+    {
+      "id": 5,
+      "lat": 19.0176147,
+      "lon": 72.8561644,
+      "type": 1,
+      "temp": 0
+    },
+    {
+      "id": 6,
+      "lat": 19.4354778,
+      "lon": -99.1364789,
+      "type": 1,
+      "temp": -1
+    },
+    {
+      "id": 7,
+      "lat": -33.8634,
+      "lon": 151.211,
+      "type": 3,
+      "temp": 11
+    },
+    {
+      "id": 8,
+      "lat": 35.7020691,
+      "lon": 139.7753269,
+      "type": 1,
+      "temp": 110
+    },
+    {
+      "id": 9,
+      "lat": 22.284681,
+      "lon": 114.158177,
+      "type": 2,
+      "temp": 111
+    },
+    {
+      "id": 10,
+      "lat": 21.2827778,
+      "lon": -157.8294444,
+      "type": 3,
+      "temp": 112
+    },
+    {
+      "id": 11,
+      "lat": 37.7873589,
+      "lon": -122.408227,
+      "type": 2,
+      "temp": 113
+    },
+    {
+      "id": 12,
+      "lat": -22.9035393,
+      "lon": -43.2095869,
+      "type": 1,
+      "temp": 114
+    }
+  ]
+}
