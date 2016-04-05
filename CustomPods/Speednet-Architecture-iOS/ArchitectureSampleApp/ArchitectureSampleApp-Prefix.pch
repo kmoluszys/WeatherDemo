@@ -1,0 +1,15 @@
+//
+//  ArchitectureSampleApp-Prefix.pch
+//  ArchitectureSampleApp
+//
+//  Created by Grzegorz Sagadyn on 08.04.2015.
+//  Copyright (c) 2015 Grzegorz Sagadyn. All rights reserved.
+//
+
+#ifndef ArchitectureSampleApp_ArchitectureSampleApp_Prefix_pch
+#define ArchitectureSampleApp_ArchitectureSampleApp_Prefix_pch
+
+#import <CommonLib-iOS/CommonLib.h>
+#import "Speednet-Architecture-iOS.h"
+
+#endif

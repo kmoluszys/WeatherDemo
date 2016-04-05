@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, "7.0"
+
+pod "AFNetworking"
+pod "Masonry"
+pod "ReactiveCocoa", "~> 2.5"
+pod "BlocksKit"
+pod "TBAlertController"
+pod "SDNetworkActivityIndicator"
+pod "RegExCategories"
+pod "ReflectableEnum"

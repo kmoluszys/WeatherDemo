@@ -1,0 +1,13 @@
+UseTab: Never
+IndentWidth: 4
+AllowShortIfStatementsOnASingleLine: false
+IndentCaseLabels: false
+ColumnLimit: 99999
+ObjCSpaceAfterProperty: true
+ObjCSpaceBeforeProtocolList: true
+BreakBeforeBinaryOperators: false
+BreakBeforeTernaryOperators: false
+BreakConstructorInitializersBeforeComma: false
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+IndentFunctionDeclarationAfterType: false
+AlignTrailingComments: false

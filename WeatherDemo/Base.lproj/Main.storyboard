@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weather View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WDWeatherViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_unknown" translatesAutoresizingMaskIntoConstraints="NO" id="i3G-A9-GvM" customClass="WDImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8SQ-Ps-32N" userLabel="Alpha View">
+                                <rect key="frame" x="0.0" y="236" width="600" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="NoT-OZ-qaJ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--,-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSc-HW-dv8" customClass="WDLabel">
+                                <rect key="frame" x="20" y="276" width="560" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i3G-A9-GvM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AKh-ho-b1X"/>
+                            <constraint firstItem="i3G-A9-GvM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CAG-3T-Fuz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rSc-HW-dv8" secondAttribute="trailing" id="Jkk-8t-UHz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i3G-A9-GvM" secondAttribute="bottom" id="RiJ-SG-DfB"/>
+                            <constraint firstItem="8SQ-Ps-32N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dIa-bC-8rb"/>
+                            <constraint firstItem="8SQ-Ps-32N" firstAttribute="centerY" secondItem="rSc-HW-dv8" secondAttribute="centerY" id="eZT-Ru-cb1"/>
+                            <constraint firstItem="rSc-HW-dv8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="g4r-KA-VWT"/>
+                            <constraint firstAttribute="trailing" secondItem="8SQ-Ps-32N" secondAttribute="trailing" id="gmn-wi-uBS"/>
+                            <constraint firstAttribute="trailing" secondItem="i3G-A9-GvM" secondAttribute="trailing" id="ldL-zg-roT"/>
+                            <constraint firstItem="rSc-HW-dv8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pRD-QE-5sq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="i3G-A9-GvM" id="PHX-QQ-w8G"/>
+                        <outlet property="tempLabel" destination="rSc-HW-dv8" id="jkt-Fy-asg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background_unknown" width="248" height="464"/>
+    </resources>
+</document>
